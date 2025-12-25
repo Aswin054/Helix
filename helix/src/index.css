@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* FIXED - Using PUBLIC folder paths */
+@font-face {
+  font-family: 'Domaine Sans';
+  src: url('public/fonts/domaine/DomaineSans.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'Druk Wide';
+  src: url('public/fonts/druk/DrukWide.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'Italy';
+  src: url('public/fonts/italy/Italy.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: block;
+}
+
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Calibri', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Greek-Style Heading */
+.greek-heading {
+  font-family: 'Domaine Sans', serif;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  line-height: 0.85;
+  text-transform: uppercase;
+  color: #d4d4d8;
+  font-style: normal;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Hero colors */
+.hero-text-primary { color: #e4e4e7; }
+.hero-text-secondary { color: #d4d4d8; }
+.hero-text-tertiary { color: #a1a1aa; }
+
+.greek-serif {
+  font-family: 'Domaine Sans', 'Georgia', 'Times New Roman', serif;
+  font-variant: small-caps;
+}
