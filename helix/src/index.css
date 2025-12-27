@@ -34,9 +34,40 @@
   box-sizing: border-box;
 }
 
+/* ✅ UNIFORM DARK BLUE ANIMATED GRADIENT BACKGROUND */
 body {
   font-family: 'Calibri', sans-serif;
   overflow-x: hidden;
+  background: linear-gradient(
+    135deg,
+    #0a0e27 0%,
+    #1a1f4a 25%,
+    #0f1538 50%,
+    #1e2554 75%,
+    #0a0e27 100%
+  );
+  background-size: 400% 400%;
+  animation: ambientGradient 20s ease infinite;
+  min-height: 100vh;
+}
+
+/* ✅ AMBIENT ANIMATED GRADIENT KEYFRAMES */
+@keyframes ambientGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 50% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 /* Greek-Style Heading */

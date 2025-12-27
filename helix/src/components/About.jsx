@@ -112,7 +112,7 @@ const About = () => {
   return (
     <section 
       ref={sectionRef} 
-      className="relative py-8 md:py-16 px-4 md:px-6 bg-[#0f1538] flex flex-col items-start min-h-screen"
+      className="relative py-8 md:py-16 px-4 md:px-6  flex flex-col items-start min-h-screen"
     >
       {/* Intro Content - Mobile Optimized */}
       <div className="relative z-10 w-full max-w-4xl ml-2 md:ml-8 mb-12 md:mb-20">
